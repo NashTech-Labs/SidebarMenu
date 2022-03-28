@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'theRichPost';
+  status: boolean = false;
+  clickEvent(){
+      this.status = !this.status;       
+  }
 }
